@@ -1,11 +1,12 @@
 export class Process {
     totalPrice = 0;
     calculate(saloon){
-        const seatedCount = saloon.querySelectorAll(".seat.selected").length;
-        this.totalPrice = parseInt(saloon.querySelector("#movie").value) * seatedCount;
+        const selectedSeats = saloon.querySelectorAll(".seat.selected");
+        this.totalPrice = parseInt(saloon.querySelector("#movie").value) * selectedSeats.length;
         return {
             price:this.totalPrice,
-            count:seatedCount
+            count:selectedSeats.length,
+            seats : selectedSeats
         };
     }
 }
