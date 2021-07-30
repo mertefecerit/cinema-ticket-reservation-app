@@ -8,3 +8,5 @@ Usege :
 - npm install
 - npm run dev
 - click localhost:1234 from terminal or browse directly
+
+![App Image](image.png)
