@@ -4,12 +4,83 @@
     <meta charset="UTF-8">
     <title>Cinema Ticket Reservation App</title>
 </head>
-<body>
-    <div class="container mt-2">
+<body class="bg-dark">
+    <div class="container">
         <div class="row justify-content-center">
             <div class="col-lg-4">
-                <div class="shadow p-2 rounded border">
-
+                <div class="saloon">
+                    <div class="screen"></div>
+                    <div class="seatRow">
+                        <div class="seat"></div>
+                        <div class="seat reserved"></div>
+                        <div class="seat"></div>
+                        <div class="seat"></div>
+                        <div class="seat reserved"></div>
+                        <div class="seat reserved"></div>
+                        <div class="seat"></div>
+                        <div class="seat"></div>
+                    </div>
+                    <div class="seatRow">
+                        <div class="seat"></div>
+                        <div class="seat"></div>
+                        <div class="seat"></div>
+                        <div class="seat"></div>
+                        <div class="seat"></div>
+                        <div class="seat"></div>
+                        <div class="seat"></div>
+                        <div class="seat"></div>
+                    </div>
+                    <div class="seatRow">
+                        <div class="seat"></div>
+                        <div class="seat"></div>
+                        <div class="seat"></div>
+                        <div class="seat"></div>
+                        <div class="seat"></div>
+                        <div class="seat"></div>
+                        <div class="seat"></div>
+                        <div class="seat"></div>
+                    </div>
+                    <div class="seatRow">
+                        <div class="seat"></div>
+                        <div class="seat"></div>
+                        <div class="seat"></div>
+                        <div class="seat"></div>
+                        <div class="seat"></div>
+                        <div class="seat"></div>
+                        <div class="seat"></div>
+                        <div class="seat"></div>
+                    </div>
+                    <div class="seatRow">
+                        <div class="seat"></div>
+                        <div class="seat"></div>
+                        <div class="seat"></div>
+                        <div class="seat"></div>
+                        <div class="seat"></div>
+                        <div class="seat"></div>
+                        <div class="seat"></div>
+                        <div class="seat"></div>
+                    </div>
+                    <div class="movie-list">
+                        <select name="" id="movie" class="form-select">
+                            <option value="20">Movie 1</option>
+                            <option value="25">Movie 2</option>
+                            <option value="35">Movie 3</option>
+                        </select>
+                    </div>
+                    <div class="info">
+                        <div class="infoSeat selected"></div>
+                        <small>Selected</small>
+                        <div class="infoSeat reserved"></div>
+                        <small>Reserved</small>
+                        <div class="infoSeat"></div>
+                        <small>Empty</small>
+                    </div>
+                    <div class="result">
+                        <p><span>0</span> adet koltuk için hesaplanan ücret <span>0</span> TL.</p>
+                    </div>
+                    <div class="d-flex justify-content-center">
+                        <button id="saveButton" class="btn btn-danger fw-bold"><i class="fas fa-save"></i> Kaydet</button>
+                    </div>
                 </div>
             </div>
         </div>
